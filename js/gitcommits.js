@@ -280,6 +280,7 @@ $(function(){
 
 		if(commitindexx < 5) {
 				$("#survey_container1").hide();
+				$(".hideshowtext").hide();
 				
 				$('#moreinformation').attr("aria-label","Hide the commit details");
 				$('#moreinformation').html('Hide Details &nbsp;<i class="fa fa-angle-up" style="color:black; font-weight:bold;">');
@@ -301,6 +302,7 @@ $(function(){
 			
 		if(commitindexx >= 5){
 				$("#survey_container1").show();
+				$(".hideshowtext").show();
 
 				$('#moreinformation').attr("aria-label","Show the commit details");
 				$('#moreinformation').html('Show Details &nbsp;<i class="fa fa-angle-down" style="color:black; font-weight:bold;">');
@@ -591,6 +593,7 @@ $(function(){
 							$('html,body').scrollTop(0);
 							$(".nowshowcommitdata").css("display","none");
 							$("#survey_container1").hide();
+							$(".hideshowtext").hide();
 							submitsurveydata(state.stepsComplete);
 						} else{
 							$("#survey_container1").hide();
